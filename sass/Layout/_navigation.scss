@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 34px;
+  gap: 8px;
+
+  height: 80px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.logo {
+  &_box {
+    display: flex;
+    width: 40%;
+  }
+  &_imgbox {
+    width: 58px;
+    height: 100%;
+    // background-color: #feaf00;
+  }
+  &_img {
+    width: 100%;
+    height: 100%;
+  }
+  &_text {
+    display: flex;
+    align-items: center;
+    width: 372px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 47px;
+
+    color: #000000;
+  }
+}
+
+.navBtn {
+  display: flex;
+  // background-color: red;
+  height: 100%;
+  justify-content: flex-end;
+
+  width: 850px;
+  &_text {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    margin: 0 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    background: linear-gradient(180deg, #feaf00 0%, #ff8713 100%);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
