@@ -1,6 +1,6 @@
 import React from "react";
-import Img1 from "./../../assets/sec2img1.svg";
-import Img2 from "./../../assets/sec2img2.svg";
+import Img1 from "./../../assets/sec2img1.png";
+import Img2 from "./../../assets/sec2img2.png";
 
 export default function Section2() {
   return (

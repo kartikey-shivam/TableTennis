@@ -1,9 +1,12 @@
 import React from "react";
-import Bgimg from "./../../assets/section3bg.svg";
+import Bgimg from "./../../assets/section3bg.png";
+
 export default function Section3() {
   return (
     <div className="section3">
-      <img src={Bgimg} className="bgimg" />
+      <div className="bgimg_box">
+        <img src={Bgimg} className="bgimg" />
+      </div>
       <div className="section3_box">
         <div className="section3_heading">
           Why Our Positive Tennis Academy is Rated #1 in The Region
