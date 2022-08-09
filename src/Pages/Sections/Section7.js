@@ -1,4 +1,5 @@
 import React from "react";
+import Usr from "./../../assets/usr.png";
 import Usr2 from "./../../assets/usr2.png";
 import Usr4 from "./../../assets/usr4.png";
 const UserCard = (props) => {
@@ -18,7 +19,7 @@ export default function Section7() {
       <h1 className="section7_heading">Testimonials</h1>
       <div className="section7_card">
         <UserCard
-          Img=""
+          Img={Usr}
           Name="Sumit Bedi"
           Para="Been playing since December 2021, they have the best tables and enthusiastic ambience 
 Would recommend you to play there once and you’ll notice the change"
@@ -30,7 +31,7 @@ Would recommend you to play there once and you’ll notice the change"
 This guy take your game to next level"
         />
         <UserCard
-          Img=""
+          Img={Usr}
           Name="Ravinder Singh"
           Para="The academy is very good and there are so many hard working students.  There are so many types of training like multiball, drills, fitness, matches to open us for the big tournament ."
         />
