@@ -6,13 +6,21 @@
   &_img {
     width: 100%;
     height: 100%;
+    // z-index: -10;
   }
+}
+.carousel {
+  // background-color: #f43553;
+  height: 100%;
+  width: 100%;
+  // display: flex;
 }
 .card {
   background: linear-gradient(180deg, #feaf00 0%, #ff8713 100%);
   width: 20%;
   height: 45vh;
   padding: 2%;
+  z-index: 100;
   // margin: 10%;
   &_box {
     position: absolute;

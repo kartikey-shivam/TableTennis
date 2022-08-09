@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar.js";
+import About1 from "./About1";
+import About2 from "./About2";
 
 import ContactUs from "./ContactUs.js";
 import Section1 from "./Sections/Section1.js";
@@ -15,6 +17,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      {/* <About1 /> */}
       <Section1 />
       <Section2 />
       <Section3 />

@@ -1,6 +1,9 @@
 import React from "react";
 import Bgimg from "./../../assets/bgimg1.png";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
+import Carousel from "react-material-ui-carousel";
+
+// import { Carousel } from "react-responsive-carousel";
 const Card = (props) => {
   return (
     <div className="card">
@@ -29,8 +32,12 @@ const Card = (props) => {
 export default function Section1() {
   return (
     <div className="section1">
-      <img src={Bgimg} className="section1_img" />
       {/* <UncontrolledExample /> */}
+      <Carousel className="carousel" NextIcon={true} PrevIcon={true}>
+        <img src={Bgimg} className="section1_img" />
+        <img src={Bgimg} className="section1_img" />
+        <img src={Bgimg} className="section1_img" />
+      </Carousel>
       <div className="card_box">
         <Card
           Head="Register For Tennis Lessons"

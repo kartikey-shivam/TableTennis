@@ -3,6 +3,74 @@
   margin: 0;
   box-sizing: border-box; }
 
+.about_header {
+  width: 100%;
+  height: 75vh;
+  position: relative; }
+  .about_header-text {
+    position: absolute;
+    bottom: 20%;
+    left: 10%; }
+
+.about_img {
+  height: 100%;
+  width: 100%; }
+
+.about_heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 70px;
+  letter-spacing: -0.005em;
+  color: #ffffff; }
+
+.about_subhead {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 56px;
+  color: #ffffff; }
+
+.about-heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -0.005em;
+  color: #ff6300;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0; }
+
+.about-content {
+  padding: 2rem 10rem; }
+
+.about-para_span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -0.005em;
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0; }
+
+.about-secondary_head {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.0025em;
+  color: #ff6300; }
+
 .section1 {
   background-color: #ffbb18;
   height: 80vh;
@@ -11,11 +79,16 @@
     width: 100%;
     height: 100%; }
 
+.carousel {
+  height: 100%;
+  width: 100%; }
+
 .card {
   background: linear-gradient(180deg, #feaf00 0%, #ff8713 100%);
   width: 20%;
   height: 45vh;
-  padding: 2%; }
+  padding: 2%;
+  z-index: 100; }
   .card_box {
     position: absolute;
     bottom: -20%;
