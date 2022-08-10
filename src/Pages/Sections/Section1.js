@@ -1,7 +1,10 @@
 import React from "react";
 import Bgimg from "./../../assets/bgimg1.png";
+import Bgimg1 from "./../../assets/sec2img1.png";
+import Bgimg2 from "./../../assets/sec2img2.png";
 // import Carousel from "react-bootstrap/Carousel";
 import Carousel from "react-material-ui-carousel";
+import { Link } from "@mui/material";
 
 // import { Carousel } from "react-responsive-carousel";
 const Card = (props) => {
@@ -13,30 +16,14 @@ const Card = (props) => {
   );
 };
 
-// function UncontrolledExample() {
-//   return (
-//     <Carousel>
-//       <Carousel.Item>
-//         <img className="d-block w-100" src={Bgimg} alt="First slide" />
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img className="d-block w-100" src={Bgimg} alt="Second slide" />
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img className="d-block w-100" src={Bgimg} alt="Third slide" />
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
-
 export default function Section1() {
   return (
     <div className="section1">
       {/* <UncontrolledExample /> */}
       <Carousel className="carousel" NextIcon={true} PrevIcon={true}>
         <img src={Bgimg} className="section1_img" />
-        <img src={Bgimg} className="section1_img" />
-        <img src={Bgimg} className="section1_img" />
+        <img src={Bgimg1} className="section1_img" />
+        <img src={Bgimg2} className="section1_img" />
       </Carousel>
       <div className="card_box">
         <Card

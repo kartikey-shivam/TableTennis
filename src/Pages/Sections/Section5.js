@@ -18,23 +18,46 @@ const Block = (props) => {
 };
 export default function Section5() {
   return (
-    <div className="section5">
-      <h1 className="section5_heading">Achievments</h1>
-      <div className="blocks">
-        <Block Img={Img1} Name="Garvita" />
-        <Block Img={Img2} Name="Aditya" />
-        <Block Img={Img3} Name="Suhani Sareen" />
+    <div>
+      <div className="section5 section5_phnview">
+        <h1 className="section5_heading">Achievments</h1>
+        <div className="blocks">
+          <Block Img={Img1} Name="Garvita" />
+          <Block Img={Img2} Name="Aditya" />
+        </div>
+        <div className="blocks">
+          <Block Img={Img3} Name="Suhani Sareen" />
+          <Block Img={Img4} Name="Aditya" />
+        </div>
+        <div className="blocks">
+          <Block Img={Img5} Name="Pawan" />
+          <Block Img={Img6} Name="Kairav Saini" />
+        </div>
+        <div className="insta-btnbox">
+          <button type="" className="insta-btn">
+            Read More
+            <img src={Insta} className="insta-img" />
+          </button>
+        </div>
       </div>
-      <div className="blocks">
-        <Block Img={Img4} Name="Aditya" />
-        <Block Img={Img5} Name="Pawan" />
-        <Block Img={Img6} Name="Kairav Saini" />
-      </div>
-      <div className="insta-btnbox">
-        <button type="" className="insta-btn">
-          Read More
-          <img src={Insta} className="insta-img" />
-        </button>
+      <div className="section5">
+        <h1 className="section5_heading">Achievments</h1>
+        <div className="blocks">
+          <Block Img={Img1} Name="Garvita" />
+          <Block Img={Img2} Name="Aditya" />
+          <Block Img={Img3} Name="Suhani Sareen" />
+        </div>
+        <div className="blocks">
+          <Block Img={Img4} Name="Aditya" />
+          <Block Img={Img5} Name="Pawan" />
+          <Block Img={Img6} Name="Kairav Saini" />
+        </div>
+        <div className="insta-btnbox">
+          <button type="" className="insta-btn">
+            Read More
+            <img src={Insta} className="insta-img" />
+          </button>
+        </div>
       </div>
     </div>
   );

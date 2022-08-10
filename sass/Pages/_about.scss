@@ -22,6 +22,10 @@
     letter-spacing: -0.005em;
 
     color: #ffffff;
+    @include respond(phone) {
+      font-size: 30px;
+      line-height: 50px;
+    }
   }
   &_subhead {
     font-family: "Roboto";
@@ -31,6 +35,9 @@
     line-height: 56px;
 
     color: #ffffff;
+    @include respond(phone) {
+      font-size: 20px;
+    }
   }
   &-heading {
     font-family: "Roboto";
@@ -47,10 +54,16 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    @include respond(phone) {
+      font-size: 40px;
+    }
   }
 
   &-content {
     padding: 2rem 10rem;
+    @include respond(phone) {
+      padding: 2rem 2rem;
+    }
   }
   &-para {
     &_span {
@@ -68,6 +81,9 @@
       flex: none;
       order: 0;
       flex-grow: 0;
+      @include respond(phone) {
+        font-size: 40px;
+      }
     }
   }
 }
