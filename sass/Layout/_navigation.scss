@@ -5,7 +5,7 @@
   align-items: center;
   padding: 0px 34px;
   gap: 8px;
-
+  width: 100%;
   height: 80px;
 
   flex: none;
@@ -15,12 +15,19 @@
     height: 50px;
     padding: 0px 10px;
   }
+  @include respond(tab-port) {
+    width: 100%;
+    height: 60px;
+    padding: 0 5px;
+  }
 }
 .logo {
   &_box {
     display: flex;
     width: 40%;
-    @include respond(phone) {
+    @include respond(tab-port) {
+      width: 100%;
+      // margin-right: 50%;
     }
   }
   &_imgbox {
@@ -28,6 +35,11 @@
     height: 100%;
     @include respond(phone) {
       width: 58px;
+    }
+    @include respond(tab-port) {
+      // height: 100%;
+      width: 50px;
+      margin-top: 2%;
     }
     // background-color: #feaf00;
   }
@@ -52,6 +64,11 @@
       font-size: 13px;
       line-height: 10px;
     }
+    @include respond(tab-port) {
+      width: 150px;
+      font-size: 16px;
+      line-height: 10px;
+    }
   }
 }
 
@@ -65,6 +82,23 @@
   @include respond(phone) {
     display: none;
   }
+  @include respond(tab-port) {
+    display: none;
+  }
+  &_phnview {
+    display: none;
+    @include respond(phone) {
+      display: flex;
+      width: 10%;
+      // margin-right: 0;
+      // position: absolute;
+      // right: -5%;
+    }
+    @include respond(tab-port) {
+      width: 10%;
+      display: flex;
+    }
+  }
   &_text {
     height: 100%;
     width: 80px;
@@ -73,9 +107,16 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
-    color: #ffffff;
-    background: linear-gradient(180deg, #feaf00 0%, #ff8713 100%);
+    border: none;
+    background-color: none;
+    &:active,
+    :visited,
+    ::after,
+    :focus {
+      color: #ffffff;
+      background: linear-gradient(180deg, #feaf00 0%, #ff8713 100%);
+    }
+    color: black;
     flex: none;
     order: 0;
     flex-grow: 0;

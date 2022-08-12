@@ -10,8 +10,12 @@ import { Link } from "@mui/material";
 const Card = (props) => {
   return (
     <div className="card">
-      <h2 className="card_head">{props.Head}</h2>
-      <p className="card_para">{props.Para}</p>
+      <a href={props.Link}>
+        {/* <Link to={"/about/tt"}> */}
+        <h2 className="card_head">{props.Head}</h2>
+        <p className="card_para">{props.Para}</p>
+        {/* </Link> */}
+      </a>
     </div>
   );
 };
@@ -26,11 +30,15 @@ export default function Section1() {
         <img src={Bgimg2} className="section1_img" />
       </Carousel>
       <div className="card_box">
+        {/* <a href="/about/tt"> */}
         <Card
+          Link="/about/tt"
           Head="Register For Tennis Lessons"
           Para="Our experiences in-structure offer a variety of table tannis lessons for children and teens"
         />
+        {/* </a> */}
         <Card
+          Link="/about/yoga"
           Head="Register For Yoga Session"
           Para="Our experiences in-structure offer a variety of table tannis lessons for children and teens"
         />

@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Router, Routes } from "react-router-dom";
 import Navbar from "../Components/Navbar.js";
 import About1 from "./About1";
 import About2 from "./About2";
@@ -17,7 +16,7 @@ import Section8 from "./Sections/Section8.js";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Section1 />
       <Section2 />
       <Section3 />
@@ -27,10 +26,7 @@ export default function Home() {
       <Section7 />
       <Section8 />
       <ContactUs />
-      <Routes>
-        <Route path="/about/tt" exact element={<About1 />} />
-        <Route path="/about/yoga" exact element={<About2 />} />
-      </Routes>
+
       <footer className="footer">
         Tabletennis 2022. All Rights Reserved. Privacy Policy.
       </footer>
