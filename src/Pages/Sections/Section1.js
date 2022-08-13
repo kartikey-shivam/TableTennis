@@ -2,6 +2,7 @@ import React from "react";
 import Bgimg from "./../../assets/bgimg1.png";
 import Bgimg1 from "./../../assets/sec2img1.png";
 import Bgimg2 from "./../../assets/sec2img2.png";
+import Arrow from "./../../assets/arrow.png";
 // import Carousel from "react-bootstrap/Carousel";
 import Carousel from "react-material-ui-carousel";
 import { Link } from "@mui/material";
@@ -16,6 +17,9 @@ const Card = (props) => {
         <p className="card_para">{props.Para}</p>
         {/* </Link> */}
       </a>
+      <div className="arrow_box">
+        <img src={Arrow} className="arrow_img" />
+      </div>
     </div>
   );
 };

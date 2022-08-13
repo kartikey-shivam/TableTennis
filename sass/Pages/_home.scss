@@ -12,7 +12,18 @@
     // z-index: -10;
   }
 }
-
+.arrow {
+  &_box {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 5%;
+  }
+  &_img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .carousel {
   // background-color: #f43553;
   height: 100%;
@@ -25,8 +36,15 @@
   height: 45vh;
   padding: 2%;
   z-index: 100;
+  position: relative;
   cursor: pointer;
   @include respond(phone) {
+    width: 42%;
+    margin: 1rem 0rem;
+    height: 35vh;
+    margin-left: 1rem;
+  }
+  @include respond(tab-port) {
     width: 42%;
     margin: 1rem 0rem;
     height: 35vh;
@@ -42,9 +60,12 @@
     @include respond(phone) {
       bottom: -60%;
     }
+    @include respond(tab-port) {
+      bottom: -60%;
+    }
   }
   &_head {
-    font-family: "Roboto";
+    font-family: "Abel", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -63,9 +84,16 @@
       font-size: 30px;
       height: 60%;
     }
+    @include respond(tab-port) {
+      font-size: 30px;
+      height: 60%;
+    }
+    @include respond(tab-land) {
+      font-size: 30px;
+    }
   }
   &_para {
-    font-family: "Roboto";
+    font-family: "Abel", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -82,6 +110,12 @@
     @include respond(phone) {
       font-size: 12px;
     }
+    @include respond(tab-port) {
+      font-size: 12px;
+    }
+    @include respond(tab-land) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -94,9 +128,18 @@
   @include respond(phone) {
     display: none;
   }
+  @include respond(tab-port) {
+    display: none;
+  }
   &_phnview {
     display: none;
     @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      margin: 15rem 0 8rem 0;
+      padding: 0;
+    }
+    @include respond(tab-port) {
       display: flex;
       flex-direction: column;
       margin: 15rem 0 8rem 0;
@@ -125,6 +168,9 @@
       margin: 0rem;
       padding: 0;
       // background-color: red;
+    }
+    @include respond(tab-land) {
+      padding: 10px 20px;
     }
   }
   &_heading {
@@ -171,6 +217,10 @@
     cursor: pointer;
     @include respond(phone) {
       width: 50%;
+      padding: 10px;
+    }
+    @include respond(tab-land) {
+      width: 60%;
       padding: 10px;
     }
     background: linear-gradient(270deg, #f43553 0.13%, #fc8a05 100%);
@@ -571,6 +621,10 @@
       font-size: 70px;
       margin-bottom: 1rem;
     }
+    @include respond(tab-land) {
+      font-size: 70px;
+      margin-bottom: 1rem;
+    }
   }
   &_card {
     width: 100%;
@@ -589,7 +643,18 @@
   background: #f3f3f3;
   @include respond(phone) {
     width: 50%;
+    // background-color: #f43553;
     padding: 5% 1% 1% 1%;
+    margin: 1rem;
+  }
+  @include respond(tab-port) {
+    width: 50%;
+    padding: 5% 1% 1% 1%;
+    margin: 1rem;
+  }
+  @include respond(tab-land) {
+    width: 50%;
+    padding: 10% 1% 1% 1%;
     margin: 1rem;
   }
   /* Inside auto layout */

@@ -68,8 +68,12 @@ function Nav() {
         <a href="/about/tt">
           <button className="navBtn_text">About us</button>
         </a>
-        <button className="navBtn_text">Contact us</button>
-        <button className="navBtn_text">Register</button>
+        <a href="">
+          <button className="navBtn_text">Contact us</button>
+        </a>
+        <a href="">
+          <button className="navBtn_text">Register</button>
+        </a>
       </div>
       <div className="navBtn_phnview">
         <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
@@ -91,7 +95,8 @@ function Nav() {
             aria-label="mailbox folders"
           >
             <Drawer
-              variant="temporary"
+              variant="temprary"
+              anchor="right"
               open={mobileOpen}
               onClose={handleDrawerToggle}
               ModalProps={{
